@@ -3,7 +3,7 @@
 
 var defaultBet = 1;
 var defaultCashout = 5;
-var cashoutThreshold = 0.75;
+var cashoutPercentageThreshold = 0.75;
 
 // This strategy editor is in BETA mode, please
 // exercise extreme caution and use exclusively at
@@ -61,7 +61,7 @@ engine.on('cashed_out', function(resp) {
    _activeCount--;
 
    //console.log('Percentage left', _activeCount / _totalCount);
-   if (!cashedOut && _activeCount / _totalCount < cashoutThreshold) {
+   if (!cashedOut && _activeCount / _totalCount < cashoutPercentageThreshold) {
      engine.cashOut();
      cashedOut = true;
    }
