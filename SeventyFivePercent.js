@@ -3,7 +3,7 @@
 
 var defaultBet = 1;
 var defaultCashout = 5;
-var cashoutPercentageThreshold = 0.75;
+var cashoutPercentageThreshold = 0.25;
 
 // This strategy editor is in BETA mode, please
 // exercise extreme caution and use exclusively at
