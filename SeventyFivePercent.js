@@ -23,7 +23,7 @@ var cashoutThreshold = 0.75;
 var _activeCount = 0;
 var _totalCount = 0;
 engine.on('game_starting', function(info) {
-  if (!cashedOut){
+  if (cashedOut){
 	  return;
 	}
 
